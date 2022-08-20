@@ -13,11 +13,11 @@ const errorHandlerMiddleware = require('./middleware/error-handler')
 const authenticateUser = require('./middleware/authentication')
 
 //routes
-const authRouter = require('./routes/auth')
-const leaderboardRouter = require('./routes/leaderboard')
+const authRouter = require('./api/routes/auth')
+const leaderboardRouter = require('./api/routes/leaderboard')
 
 //test route
-app.get('/test', (req, res) => {
+app.get('/', (req, res) => {
   res.send('ht6 api')
 })
 

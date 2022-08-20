@@ -1,0 +1,233 @@
+[
+  {
+    "question":"What would your income have to be to comfortably purchase a new Mercedes worth $100,000 with a 20% down payment and over 5 years?",
+    "options":[
+      { "a": "Around $165,000 per year" }, 
+      { "b": "$100,000 per year" }, 
+      { "c": "Around $200,000 per year" }, 
+      { "d": "Around $125,000 per year" }
+    ],
+    "answer": "a",
+    "points": 300,
+    "id": 1
+  },
+  {
+    "question": "After you have created a budget, you plan on saving $300 every month. How long will it take you to save $2100?",
+    "options":[
+      { "a": "A year" },
+      { "b": "Two months" },
+      { "c": "7 months" },
+      { "d": "6 months" }
+    ],
+    "answer": "c",
+    "points": 100,
+    "id": 2
+  },
+  {
+    "question": "You have won the lottery! You have the choice of taking home $950,000 today or $1,000,000 a year from now. If the interest rate is 1.6%, which is the better option? ",
+    "options":[
+      { "a": "$950,000" },
+      { "b": "$1,000,000" },
+      { "c": "Doesn’t matter" }
+    ],
+    "answer": "a",
+    "points": 200,
+    "id": 3
+  },
+  {
+    "question": "Is it better to receive $1,000 today or in a year from now if the interest rate is positive?",
+    "options":[
+      { "a": "Today" },
+      { "b": "A year from now" },
+      { "c": "Doesn’t matter" }
+    ],
+    "answer": "a",
+    "points": 100,
+    "id": 4
+  },
+  {
+    "question": "Calculate the interest earned on a $1,000 deposit that earns 4% interest compounded quarterly.",
+    "options":[
+      { "a": "$40" },
+      { "b": "$38" },
+      { "c": "$4" },
+      { "d": "$45" }
+    ],
+    "answer": "b",
+    "points": 200,
+    "id": 5
+  },
+  {
+    "question": "Calculate the future value of a $5,000 two-year deposit that earns 3% interest compounded annually. ",
+    "options":[
+      { "a": "$5300" },
+      { "b": "$5306.48" },
+      { "c": "$5304.50" },
+      { "d": "$5309.12" }
+    ],
+    "answer": "c",
+    "points": 300,
+    "id": 6
+  },
+  {
+    "question": "Melly made an investment inside his RRSP that earned $2,000 this year and has a marginal tax rate of 48%. Mustafa made the same contribution that also earned $2,000 with a marginal tax rate of 32%. Who paid more taxes on their investment?",
+    "options":[
+      { "a": "Melly" },
+      { "b": "Mustafa" },
+      { "c": "Both paid the same" },
+      { "d": "Neither paid any taxes" }
+    ],
+    "answer": "d",
+    "points": 200,
+    "id": 7
+  },
+  {
+    "question":"If you have $100 at your disposal to invest, should you first? ",
+    "options":[
+      { "a": "Make a payment on your credit card balance" },
+      { "b": "Invest it in GIC’s" },
+      { "c": "Invest it in your TFSA" },
+      { "d": "Make a payment on your car loan" }
+    ],
+    "answer":"a",
+    "points": 100,
+    "id": 8
+  },
+  {
+    "question":"If Canada’s inflation rate for the past year was 2%, that means that the cost of living this year is: ",
+    "options":[
+      { "a": "2% lower than last year" },
+      { "b": "Same as last year" },
+      { "c": "2% higher than last year" }
+    ],
+    "answer":"c",
+    "points": 100,
+    "id": 9
+  },
+  {
+    "question":"Which of the following terms are included in a mortgage contract?",
+    "options":[
+      { "a": "The mortgage loan amount" },
+      { "b": "How much extra you’ll be paying as a result of the interest on the mortgage" },
+      { "c": "The frequency and amount of payments" },
+      { "d": "Your dog’s name" }
+    ],
+    "answer":"a",
+    "points": 100,
+    "id": 10
+  },
+  {
+    "question":"____ is an important concept for making investment decision to maximize profits and help you sleep comfortably at night",
+    "options":[
+      { "a": "Interest rate" },
+      { "b": "Risk tolerance " },
+      { "c": "Inflation" },
+      { "d": "Compounding" }
+    ],
+    "answer":"b",
+    "points": 200,
+    "id": 11
+  },
+  {
+    "question":"True or False. Choosing a financial advisor is an important decision in managing your investment portfolio",
+    "options":[
+      { "a": "True" },
+      { "b": "False" }
+    ],
+    "answer":"a",
+    "points": 100,
+    "id": 12
+  },
+  {
+    "question":"What is the simple formula for making a budget?",
+    "options":[
+      { "a": "Income - Expenses = Savings" },
+      { "b": "Expenses + Debt = Income" },
+      { "c": "Debt + Income = Expenses" },
+      { "d": "Income - Expenses = Debt" }
+    ],
+    "answer":"a",
+    "points": 100,
+    "id": 13
+  },
+  {
+    "question":"What should you do after you build your budget?",
+    "options":[
+      { "a": "Spend a huge amount of your saving to reward yourself" },
+      { "b": "Start saving for an emergency fund that can cover your costs for 3 to 6 months" },
+      { "c": "Plan a trip to your dream destination" },
+      { "d": "Nothing" }
+    ],
+    "answer":"b",
+    "points": 200,
+    "id": 14
+  },
+  {
+    "question":"True or False. Interests on lines of credit are always smaller than credit cards",
+    "options":[
+      { "a": "True" },
+      { "b": "False" }
+    ],
+    "answer":"b",
+    "points": 200,
+    "id": 15
+  },
+  {
+    "question":"What aspects of your finance does your credit score affect?",
+    "options":[
+      { "a": "Your ability to get a loan" },
+      { "b": "Your ability to get a mortgage" },
+      { "c": "None of the above" },
+      { "d": "All of the above" }
+    ],
+    "answer":"d",
+    "points": 200,
+    "id": 16
+  },
+  {
+    "question":"True or False. Only bankers, lenders and government officials can access your credit score and history.",
+    "options":[
+      { "a": "True" },
+      { "b": "False" }
+    ],
+    "answer": "b",
+    "points": 200,
+    "id": 17
+  },
+  {
+    "question":"Which of the following affects your credit score?",
+    "options":[
+      { "a": "When you pay your credit card bill" },
+      { "b": "How much you spend" },
+      { "c": "What your income is" },
+      { "d": "All of the above" }
+    ],
+    "answer":"a",
+    "points": 200,
+    "id": 18
+  },
+  {
+    "question":"What is true about mutual funds?",
+    "options":[
+      { "a": "They are considered highly risky and have high returns" },
+      { "b": "They are considered highly risky but low returns" },
+      { "c": "They are considered low risk and relatively low return" },
+      { "d": "They are considered low risk and high return" }
+    ],
+    "answer":"c",
+    "points": 200,
+    "id": 19
+  },
+  {
+    "question":"Why should one consider diversifying their investment portfolio?",
+    "options":[
+      { "a": "To avoid big losses from sudden company falls" },
+      { "b": "To spread their investments over multiple companies" },
+      { "c": "To look cool" },
+      { "d": "The first 2 options" }
+    ],
+    "answer":"d",
+    "points": 200,
+    "id": 20
+  }
+]

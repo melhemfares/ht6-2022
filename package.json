@@ -13,11 +13,14 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "concurrently": "^7.3.0",
+    "create-react-native-app": "^3.8.0",
     "dotenv": "^16.0.1",
+    "expo-cli": "^6.0.5",
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",
     "http-status-codes": "^2.2.0",
     "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
     "mongoose": "^6.5.2",
     "protobufjs": "^7.0.0"
   },

@@ -26,29 +26,29 @@ const createUserRank = async (req, res) => {
   res.status(StatusCodes.CREATED).json({ rank })
 }
 
-const updateScore = async (req, res) => {
+// const updateScore = async (req, res) => {
   
-  const {
-    user: { userId },
-    query: { points }
-  } = req
+//   const {
+//     user: { userId },
+//     query: { points }
+//   } = req
 
-  const rank = await Leaderboard.findOneAndUpdate(
-    { user: userId },
-    {$inc: { points: points } },
-    { new: true }
-  )
+//   const rank = await Leaderboard.findOneAndUpdate(
+//     { user: userId },
+//     {$inc: { points: points } },
+//     { new: true }
+//   )
 
-  if(!rank) {
-    throw new NotFoundError(`No user with id ${userId}`)
-  }
+//   if(!rank) {
+//     throw new NotFoundError(`No user with id ${userId}`)
+//   }
 
-  res.status(StatusCodes.OK).json({ rank })
-}
+//   res.status(StatusCodes.OK).json({ rank })
+// }
 
 module.exports = {
   getLeaderboard,
   getUserScore,
   createUserRank,
-  updateScore
+  // updateScore
 }

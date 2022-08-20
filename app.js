@@ -15,6 +15,7 @@ const authenticateUser = require('./middleware/authentication')
 //routes
 const authRouter = require('./routes/auth')
 const leaderboardRouter = require('./routes/leaderboard')
+const quizRouter = require('./routes/quiz')
 
 //test route
 app.get('/test', (req, res) => {
@@ -23,6 +24,7 @@ app.get('/test', (req, res) => {
 
 app.use('/api/auth', authRouter)
 app.use('/api/leaderboard', authenticateUser, leaderboardRouter)
+app.use('/api/quiz', authenticateUser, quizRouter)
 
 app.use(errorHandlerMiddleware)
 app.use(NotFoundMiddleware)

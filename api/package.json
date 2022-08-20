@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node app.js",
     "client": "npm run start --prefix client",
-    "server": "nodemon app.js",
+    "server": "node app.js",
     "dev": "concurrently \"npm run client\" \"npm run server\""
   },
   "author": "",
@@ -25,5 +25,8 @@
     "nodemon": "^2.0.19"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": "14.x"
+  }
 }

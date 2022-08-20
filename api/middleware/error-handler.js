@@ -7,11 +7,11 @@ const errorHandlerMiddleware = (err, req, res, next) => {
   }
 
   if(err.name === 'ValidationError') {
-    customError.msg = Obect.values(err.errors).map((item) => item.message).join(', ')
+    customError.msg = Object.values(err.errors).map((item) => item.message).join(', ')
     customError.statsCode = 400
   }
 
-  if(err.name = 'CastError') {
+  if(err.name === 'CastError') {
     customError.msg = `No item found with id: ${err.value}`
     customError.statusCode = 404
   }

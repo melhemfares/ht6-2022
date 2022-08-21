@@ -29,8 +29,12 @@ const checkQuestionResponse = async (req, res) => {
   const question = await Quiz.findOne({
     id: req.params.id
   })
+  console.log(question.answer);
+  console.log(question.answer.toUpperCase());
+  console.log(question.answer.toUpperCase().charCodeAt(0) - 65);
+  console.log(question.options[question.answer.toUpperCase().charCodeAt(0) - 65][question.answer])
 
-  if(response === question.options[question.answer.charCodeAt(0) - 65][question.answer]) {
+  if(response == question.options[question.answer.toUpperCase().charCodeAt(0) - 65][question.answer]) {
     const rank = await Leaderboard.findOneAndUpdate(
       { user: req.user.userId },
       { $inc: { points: question.points } },

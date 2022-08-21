@@ -30,7 +30,7 @@ const checkQuestionResponse = async (req, res) => {
     id: req.params.id
   })
 
-  if(response === question.answer) {
+  if(response === question.options[question.answer.charCodeAt(0) - 65][question.answer]) {
     const rank = await Leaderboard.findOneAndUpdate(
       { user: req.user.userId },
       { $inc: { points: question.points } },

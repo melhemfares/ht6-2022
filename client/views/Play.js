@@ -17,7 +17,7 @@ const Play = (props) => {
     const [loading, setLoading] = useState(true);
     const [quizData, setQuizData] = useState(null);
     const [currIndex, setIndex] = useState(0);
-    const [lastSelected, setLast] = useState("progress");
+    const [lastSelected, setLast] = useState(0);
     const [status, setStatus] = useState("progress");
     useEffect(() => {
         const fetchQuizData = async () => {
@@ -42,7 +42,7 @@ const Play = (props) => {
         }
         fetchQuizData().catch(console.error);
     }, []);
-    async function handleAnswerSelection(item) {
+    async function handleAnswerSelection(item, index) {
         const body = {
             answer: item
         }
@@ -62,7 +62,7 @@ const Play = (props) => {
             await response.json()
             .then((async (res) => {
                 if (res) {
-                    setIndex(currIndex + 1);
+                    setLast(index);
                     if (res.msg === "Correct answer!") {
                         setStatus("correct");
                     } else {
@@ -84,9 +84,13 @@ const Play = (props) => {
                     question={quizData[currIndex].question}
                     options={quizData[currIndex].options.map(el=>Object.values(el))}
                     onItemSelected={handleAnswerSelection}
+                    lastSelected={lastSelected}
                     status={status}
                     />
-                    <Button disabled={true}>Next Question</Button>
+                    <Button disabled={status == "progress"} onPress={() => {
+                        setIndex(currIndex + 1);
+                        setStatus("progress");
+                    }}>Next Question</Button>
                 </View>
             </>
         ) : (

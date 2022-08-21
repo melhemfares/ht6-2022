@@ -27,8 +27,8 @@ const Question = (props) => {
         style={styles.questionOptions}
         data={props.options}
         contentContainerStyle={styles.questionOptionsContainer}
-        renderItem={({ item }) => (
-          <Button mode="outlined" onPress={() => props.onItemSelected(item)}>
+        renderItem={({ item, index }) => (
+          <Button mode="outlined" disabled={props.status != "progress"} buttonColor={(props.lastSelected == index && props.status == "incorrect") ? "#ff0000" : ((props.lastSelected == index && props.status == "correct") ? "#66ff33" : "#dcdcdc")} onPress={() => props.onItemSelected(item, index)}>
             {item}
           </Button>
         )}

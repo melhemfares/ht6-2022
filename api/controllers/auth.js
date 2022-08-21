@@ -41,7 +41,7 @@ const login = async (req, res) => {
 
   //Once all checks pass, token is created and server responds with user payload
   const token = user.createJWT()
-  res.status(StatusCodes.OK).json({ user:{name:user.name}, token })
+  res.status(StatusCodes.OK).json({ user:{name:user.name}, token });
 }
 
 module.exports = {

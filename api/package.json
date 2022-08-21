@@ -4,9 +4,10 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "client": "npm run start --prefix ../client",
+    "client": "npm run web --prefix ../client",
     "server": "nodemon app.js",
-    "dev": "concurrently \"npm run client\" \"npm run server\""
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "build": "expo build:web"
   },
   "author": "",
   "license": "ISC",

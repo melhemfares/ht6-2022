@@ -5,7 +5,7 @@ const Quiz = require('../models/Quiz')
 const User = require('../models/User')
 
 const getAllQuestions = async (req, res) => {
-  const questions = await Quiz.find().sort('points')
+  const questions = await Quiz.find({}, "question options points id").sort('points')
   res.status(StatusCodes.OK).json({ questions })
 }
 

@@ -20,11 +20,11 @@ const getUserScore = async (req, res) => {
   res.status(StatusCodes.OK).json({ score })
 }
 
-const createUserRank = async (req, res) => {
-  req.body.user = req.user.userId
-  const rank = await Leaderboard.create( req.body )
-  res.status(StatusCodes.CREATED).json({ rank })
-}
+// const createUserRank = async (req, res) => {
+//   req.body.user = req.user.userId
+//   const rank = await Leaderboard.create( req.body )
+//   res.status(StatusCodes.CREATED).json({ rank })
+// }
 
 // const updateScore = async (req, res) => {
   
@@ -49,6 +49,6 @@ const createUserRank = async (req, res) => {
 module.exports = {
   getLeaderboard,
   getUserScore,
-  createUserRank,
+  //createUserRank,
   // updateScore
 }

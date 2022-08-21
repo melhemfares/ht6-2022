@@ -5,7 +5,11 @@ const express = require('express');
 const connectDB = require('./db/connect');
 const app = express();
 
+const cors = require('cors')
+
 app.use(express.json());
+app.use(express.static('../client/build'));
+app.use(cors());
 
 //middleware
 const NotFoundMiddleware = require('./middleware/not-found')

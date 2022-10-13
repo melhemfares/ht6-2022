@@ -6,6 +6,8 @@
 
 ## Run Locally
 
+Create a .env file to add your own MONGO_URI, JWT_SECRET, and JWT_LIFETIME environment variables.
+
 Clone the project
 
 ```bash
